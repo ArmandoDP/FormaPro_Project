@@ -1,0 +1,113 @@
+---
+// Home page CTA Section
+// ------------
+// Description: A centered call to action section that contains: a title, text, a user review snippet, a button and a image.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col3.astro'
+// - UI
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import Button from '../../ui/Button.astro'
+import AvatarGroup from '../../ui/AvatarGroup.astro'
+
+// Content
+// - Hero Image
+import heroImage from '../../../assets/hero-01.png'
+import ejemploImage from '../../../assets/cards/feature-01.svg'
+// - Avatars
+import user1 from '../../../assets/avatars/avatar-01.webp'
+import user2 from '../../../assets/avatars/avatar-02.webp'
+import user3 from '../../../assets/avatars/avatar-03.webp'
+const avatars = [
+	{ image: { src: user1.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user2.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user3.src, alt: 'user name' }, link: '/' }
+]
+---
+
+<Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900">
+	<Row>
+        <Col span="2" />
+        <Col span="8" align="center">
+			<h5><strong>OUR PROCESS</strong></h5>
+			<h2 class="font-semibold">Stress-Free Repairs in Three Easy Steps</h2>
+
+			<p class="pb-0 text-md">Our process is simple and stress-free, ensuring your home is repaired quickly and professionally. From start to finish, we handle everything with care.
+            </p>
+		</Col>
+        <Col span="12" />
+        <Col span="12" />
+
+		<Col span="4" align="center">
+            <div class="relative bg-white dark:bg-black/30 p-16 rounded-2xl text-center shadow-xl h-full">
+
+                <!-- Número -->
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-semibold text-2xl">
+                    01
+                </div>
+
+                <!-- Ícono SVG -->
+                <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-neutral-200 dark:bg-neutral-700/40 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M2.25 4.5c0 8.284 6.716 15 15 15h.75a2.25 2.25 0 002.25-2.25v-.416a1.5 1.5 0 00-.97-1.393l-3.192-1.197a1.5 1.5 0 00-1.622.45l-.67.804a11.044 11.044 0 01-5.272-5.272l.804-.67a1.5 1.5 0 00.45-1.622L6.059 3.47A1.5 1.5 0 004.666 2.5H4.25A2.25 2.25 0 002.25 4.5z" />
+                    </svg>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-2">Get in touch with us</h3>
+                <p class="text-md">Tell us about your repair needs via call, email, or our online form.</p>
+            </div>
+        </Col>
+
+        <Col span="4" align="center">
+            <div class="relative bg-white dark:bg-black/30 p-16 rounded-2xl text-center shadow-xl h-full">
+
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-blue-600
+                            flex items-center justify-center text-white font-semibold text-2xl">
+                    02
+                </div>
+
+                <!-- Ícono Reloj -->
+                <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-neutral-200 dark:bg-neutral-700/40 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M12 6v6l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-2">We arrive within 1 hour</h3>
+                <p class="text-md">Our experts will reach your doorstep promptly, ready to assess and fix.</p>
+            </div>
+        </Col>
+
+        <Col span="4" align="center">
+            <div class="relative bg-white dark:bg-black/30 p-16 rounded-2xl text-center shadow-xl h-full">
+
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-blue-600
+                            flex items-center justify-center text-white font-semibold text-2xl">
+                    03
+                </div>
+
+                <!-- Ícono Llave -->
+                <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-neutral-200 dark:bg-neutral-700/40 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M15.232 5.232a3 3 0 014.243 4.243l-7.07 7.071a4.5 4.5 0 01-6.364 0 4.5 4.5 0 010-6.364l7.07-7.07z" />
+                    </svg>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-2">We solve your problem</h3>
+                <p class="text-md">We’ll fix it efficiently, ensuring results you can trust.</p>
+            </div>
+        </Col>
+
+        <Col span="12" />
+        <Col span="12" />
+        <Col span="12" />
+        <Col span="12" />
+	</Row>
+</Section>

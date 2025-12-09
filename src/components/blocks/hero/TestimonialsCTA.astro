@@ -1,0 +1,85 @@
+---
+const testimonials = [
+  {
+    quote: `"Quick and reliable plumbing fix!"`,
+    text: "I had a leaking faucet that was driving me crazy. Handyman arrived on time and fixed it in no time! Their service was professional, and I haven't had any issues since. Highly recommended!",
+    author: "John P.",
+    location: "San Francisco, CA",
+  },
+  {
+    quote: `"Incredible service!"`,
+    text: "Friendly, fast and professional. I will definitely call them again for future repairs.",
+    author: "Maria L.",
+    location: "Los Angeles, CA",
+  },
+  {
+    quote: `"Highly skilled team!"`,
+    text: "They solved a major plumbing issue in less than an hour. Amazing experience!",
+    author: "David R.",
+    location: "San Diego, CA",
+  }
+];
+---
+
+<script>
+    import { register } from 'swiper/element/bundle';
+    register();
+</script>
+
+<section class="w-full bg-[#f0f6ff] py-24">
+
+    <div class="text-center mb-16">
+        <h5 class="text-blue-600 font-semibold tracking-wide">TESTIMONIALS</h5>
+        <h2 class="text-4xl font-bold text-neutral-900">What Our Clients Say</h2>
+    </div>
+
+    <div class="relative max-w-5xl mx-auto px-10">
+
+        <swiper-container
+            navigation="true"
+            pagination="true"
+            loop="true"
+            autoplay-delay="6000"
+            autoplay-disable-on-interaction="false"
+            space-between="30"
+            slides-per-view="1"
+            speed="900"
+            class="pb-10"
+        >
+            {testimonials.map((t) => (
+                <swiper-slide>
+                    <div class="bg-white rounded-2xl p-16 shadow-lg text-center mx-auto max-w-3xl">
+
+                        <p class="text-2xl font-semibold mb-6">{t.quote}</p>
+
+                        <p class="text-neutral-600 leading-relaxed mb-8">{t.text}</p>
+
+                        <p class="font-semibold">{t.author}</p>
+                        <p class="text-blue-600">{t.location}</p>
+
+                    </div>
+                </swiper-slide>
+            ))}
+        </swiper-container>
+
+    </div>
+
+</section>
+
+<style>
+    swiper-container::part(navigation-button-prev),
+    swiper-container::part(navigation-button-next) {
+        color: #1f3a8b;
+        width: 48px;
+        height: 48px;
+        font-size: 32px;
+    }
+
+    swiper-container::part(navigation-button-prev) {
+        left: -80px; /* flechas más separadas */
+    }
+
+    swiper-container::part(navigation-button-next) {
+        right: -80px;
+    }
+</style>

@@ -9,7 +9,7 @@ import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 // - UI
-import CTA from '../../ui/CTA.astro'
+import CTA from '../../ui/CTA_v2.astro'
 import Button from '../../ui/Button.astro'
 import ChipNotification from '../../ui/ChipNotification.astro'
 import { Image } from 'astro:assets'
@@ -22,11 +22,10 @@ import badge from '../../../assets/badge.svg'
 
 <Section>
 	<Row>
-		<Col span="1" />
-		<Col span="10">
+		<Col span="12">
 			<CTA
-				title="Join Over 30,000 Satisfied Users!"
-				text="Discover why thousands of professionals trust our platform to streamline their workflow and enhance productivity. Get started today and see the difference for yourself!"
+				title="Get in Touch with Us Today"
+				text="Have questions or need assistance? Our team is ready to help! Contact us now for fast and reliable support."
 				mode="dark"
 				bg={ctaImage}
 			>
@@ -38,6 +37,5 @@ import badge from '../../../assets/badge.svg'
 				<Button size="lg" style="primary"> Get started now! </Button>
 			</CTA>
 		</Col>
-		<Col span="1" />
 	</Row>
 </Section>

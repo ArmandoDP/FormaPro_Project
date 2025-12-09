@@ -1,0 +1,74 @@
+---
+// Home page CTA Section
+// ------------
+// Description: A centered call to action section that contains: a title, text, a user review snippet, a button and a image.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import Button from '../../ui/Button.astro'
+import AvatarGroup from '../../ui/AvatarGroup.astro'
+
+// Content
+// - Hero Image
+import heroImage from '../../../assets/hero-01.png'
+import ejemploImage from '../../../assets/cards/feature-01.svg'
+// - Avatars
+import user1 from '../../../assets/avatars/avatar-01.webp'
+import user2 from '../../../assets/avatars/avatar-02.webp'
+import user3 from '../../../assets/avatars/avatar-03.webp'
+const avatars = [
+	{ image: { src: user1.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user2.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user3.src, alt: 'user name' }, link: '/' }
+]
+---
+
+<Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900">
+	<Row>
+        <Col span="6" align="center">
+			<Image
+				src={heroImage}
+				alt="Foxi. The tailwind astro theme"
+				class="shadow-2xl shadow-neutral-200 dark:shadow-neutral-950 rounded-2xl"
+				format="webp"
+			/>
+            <div class="absolute left-1/2 -translate-x-1/2 w-[60%] -bottom-16 bg-blue-600 text-white rounded-2xl py-8 px-10 flex items-center justify-center shadow-xl gap-10">
+
+                <div class="text-center">
+                    <p class="text-3xl font-semibold leading-none">15</p>
+                    <p class="text-sm opacity-80">Years of activity</p>
+                </div>
+
+                <div class="w-px h-10 bg-white/40"></div>
+
+                <div class="text-center">
+                    <p class="text-3xl font-semibold leading-none">3000</p>
+                    <p class="text-sm opacity-80">Completed jobs</p>
+                </div>
+            </div>
+		</Col>
+		<Col span="1" />
+		<Col span="5" align="left">
+			<!-- <ChipNotification radius="rounded-full" classes="mb-6">
+				<strong>30K+</strong> satisfied customers
+				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
+			</ChipNotification> -->
+            <h5><strong>ABOUT US</strong></h5>
+			<h2 class="font-semibold">Transforming Houses into Homes</h2>
+
+			<p class="pb-0 text-md">At Handyman, we believe every home deserves the best care. With years of expertise and a passion for precision, we provide top-notch home repair services tailored to your needs. Our skilled professionals are committed to making your living space safe, functional, and beautiful.
+            </p>
+            <p class="pb-0 text-md">Whether it’s a minor fix or a major repair, we deliver lasting solutions with attention to detail. Let us turn your house into a space you love.</p>
+			<Button size="base" link="/">About Us</Button>
+		</Col>
+		<Col span="6"/>
+		<Col span="8"/>
+		<Col span="8"/>
+	</Row>
+</Section>

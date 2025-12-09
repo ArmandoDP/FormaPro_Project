@@ -30,27 +30,37 @@ const avatars = [
 
 <Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900">
 	<Row>
-		<Col span="2" />
-		<Col span="8" align="center">
-			<ChipNotification radius="rounded-full" classes="mb-6">
+		<Col span="5" align="left">
+			<!-- <ChipNotification radius="rounded-full" classes="mb-6">
 				<strong>30K+</strong> satisfied customers
 				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
-			</ChipNotification>
-			<h1>Enhance team <strong>performance</strong> with seamless integration</h1>
+			</ChipNotification> -->
+			<h1>Your Trusted Partner for All Home Repairs</h1>
 
-			<p class="pb-0 text-lg">Work smarter, not harder, with our innovative platform</p>
+			<p class="pb-0 text-lg">From quick fixes to major touch-ups, Handyman is here for you. Reliable, skilled, and always on time—let us handle the hard work so you can enjoy your space.</p>
 			<Button size="lg" link="/">Get started for free</Button>
 		</Col>
 		<Col span="2" />
-		<Col span="2" />
-		<Col span="8">
+		<Col span="5" align="center">
 			<Image
 				src={heroImage}
 				alt="Foxi. The tailwind astro theme"
-				class="translate-y-8 shadow-2xl shadow-neutral-200 dark:shadow-neutral-950"
+				class="translate-y-8 shadow-2xl shadow-neutral-200 dark:shadow-neutral-950 rounded-2xl"
 				format="webp"
-			/></Col
-		>
-		<Col span="2" />
+			/>
+		</Col>
+		<Col span="2">
+			<h5>Contact Us</h5>
+			<p class="text-sm">Email: contact@handyman.com</p>
+			<p class="text-sm">Phone: (123) 456-7890</p>
+		</Col>
+		<Col span="2">
+			<h5>Our Location</h5>
+			<p class="text-sm">500 Terry Francine Street San Francisco,</p>
+			<p class="text-sm">Twitter: twitter.com/handyman</p>
+		</Col>
+		<Col span="6"/>
+		<Col span="8"/>
+		<Col span="8"/>
 	</Row>
 </Section>

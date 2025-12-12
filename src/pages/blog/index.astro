@@ -31,5 +31,5 @@ const allPosts = await getCollection('blog')
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
-	<BlogPosts data={allPosts} />
+	<BlogPosts data={allPosts} isVisible={true} />
 </Layout>

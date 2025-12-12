@@ -16,7 +16,10 @@ import ChooseUsCTA from '../components/blocks/hero/ChooseUsCTA.astro'
 // - Testimonial background
 import testimonialBackground from '../assets/testimonial-bg-01.webp'
 import TestimonialsCTA from '../components/blocks/hero/TestimonialsCTA.astro'
-// - SEO
+import BlogCTA from '../components/blocks/hero/BlogCTA.astro'
+import FAQsCTA from '../components/blocks/hero/FAQsCTa.astro'
+import ContactUsCTA from '../components/blocks/hero/ContactUsCTA.astro'
+
 const SEO = {
 	title: 'Foxi | Your Productivity Toolkit',
 	description:
@@ -26,12 +29,13 @@ const SEO = {
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
-	<Features />
-	<AboutUsCTA />
-	<OurProcessCTA />
-	<CTA />
 	<ChooseUsCTA />
+	<Features />
+	<OurProcessCTA />
+	<AboutUsCTA />
+	<CTA />
 	<TestimonialsCTA />
-	<Testimonial bg={testimonialBackground} bgPosition="right" />
-	<HighlightBlocks />
+	<FAQsCTA />
+	<BlogCTA />
+	<ContactUsCTA />
 </Layout>

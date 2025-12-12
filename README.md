@@ -94,7 +94,7 @@ Inside Foxi Astro project, you'll see the following folders and files:
 ```plaintext
 /
 ├── public/
-│   └── favicon.svg
+│   └── favicon1.svg
 ├── src/
 │   ├── assets/
 │   ├── components/

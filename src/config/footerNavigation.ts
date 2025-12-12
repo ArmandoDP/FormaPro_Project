@@ -39,9 +39,9 @@ export const footerNavigationData: FooterData = {
 		aboutText:
 			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
 		logo: {
-			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			src: '/Asset 3.png',
+			alt: 'Forma Pro Logo',
+			text: 'Forma Pro'
 		}
 	},
 	footerColumns: [

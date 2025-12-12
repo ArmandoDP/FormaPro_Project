@@ -33,14 +33,15 @@ export interface NavData {
 
 export const navigationBarData: NavData = {
 	logo: {
-		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		src: '/Asset 3.png',
+		alt: 'Forma Pro Logo',
+		text: 'Forma Pro'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-		{ name: 'Features', link: '/features' },
+		// { name: 'Pricing', link: '/pricing' },
+		// { name: 'Features', link: '/features' },
+		{ name: 'Servicios', link: '/about' },
 		{
 			name: 'Resources',
 			link: '#',
@@ -51,7 +52,8 @@ export const navigationBarData: NavData = {
 				{ name: 'Terms', link: '/terms' }
 			]
 		},
-		{ name: 'Contact', link: '/contact' }
+		// { name: 'Contact', link: '/contact' }
+		{ name: 'Nuestro Proceso', link: '/contact' }
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Solicitar cotización', link: '/', style: 'primary', size: 'lg' }]
 }

@@ -8,22 +8,23 @@
 import StickySidebar from '../basic/StickySidebar.astro'
 import FAQ from '../../ui/Accordion.astro'
 import Card from '../../ui/cards/partials/Card.astro'
+import Button from '../../ui/Button.astro'
 
 // Props
 type Props = {
-	title: string
-	text?: string
 	data: any
 	type?: 'left' | 'right'
 	classes?: string
 }
-const { title, text, data, type = 'left', classes } = Astro.props
+const {data, type = 'left', classes } = Astro.props
 ---
 
 <StickySidebar classes={classes} type={type}>
 	<header slot="sidebar">
-		{title && <h3 class="text-3xl">{title}</h3>}
-		{text && <p class="text-lg leading-relaxed">{text}</p>}
+		<h5><strong>FAQ</strong></h5>
+		<h2 class="text-pretty">Your Questions, Answered</h2>
+		<p class="pb-0 text-md">Check out our frequently asked questions to learn more about our services and how we can help.</p>
+		<Button size="base" link="/">GET A QUOTE</Button>
 	</header>
 
 	<Card classes="divide-y divide-neutral-100 dark:divide-neutral-800">

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 695.59 173.01">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #ea734c;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #023039;
+      }
+
+      .cls-6 {
+        font-family: Arkibal-Regular, 'Arkibal Regular';
+        font-size: 103.01px;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <text class="cls-6" transform="translate(192.69 129.33)"><tspan class="cls-5" x="0" y="0">FOR</tspan><tspan class="cls-4" x="176.56" y="0">M</tspan><tspan class="cls-5" x="258.35" y="0">A</tspan><tspan class="cls-3" x="321.4" y="0">P</tspan><tspan class="cls-2" x="376.2" y="0">R</tspan><tspan class="cls-3" x="431.93" y="0">O</tspan></text>
+    <g>
+      <path class="cls-5" d="m0,0h127.02c16.56,0,30,13.44,30,30v113.01c0,16.56-13.44,30-30,30H0V0h0Z"/>
+      <g>
+        <path class="cls-1" d="m37.14,37.97h82.81v24.94h-63.06c-10.9,0-19.75-8.85-19.75-19.75v-5.19h0Z" transform="translate(157.09 100.89) rotate(180)"/>
+        <path class="cls-1" d="m58.3,96.85h5.58v38.19h-26.8v-16.96c0-11.72,9.51-21.23,21.23-21.23Z" transform="translate(100.95 231.88) rotate(180)"/>
+        <path class="cls-1" d="m56.84,67.54h63.06v24.94H37.09v-5.19c0-10.9,8.85-19.75,19.75-19.75Z" transform="translate(157 160.03) rotate(-180)"/>
+      </g>
+    </g>
+  </g>
+</svg>

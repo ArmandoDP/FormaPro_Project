@@ -1,0 +1,100 @@
+---
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Button from '../../ui/Button.astro'
+---
+
+<Section 
+	id="contact"
+	padding="top"
+	classes="py-24 bg-gradient-to-r from-[#ea734a] via-[#b4492c] to-[#40170e] text-white"
+>
+	<Row>
+		<Col span="12" align="center">
+
+			<!-- TÍTULO -->
+			<h2 class="text-4xl font-semibold mb-4 text-white">Contact Us</h2>
+
+			<!-- SUBTÍTULO -->
+			<p class="text-lg opacity-90 max-w-2xl mx-auto mb-14 text-white">
+				Need help with home repairs? Our team is ready to assist you. 
+				Get in touch today and let’s fix it together!
+			</p>
+
+			<!-- CONTENEDOR DE TARJETAS -->
+			<div class="flex flex-wrap justify-center gap-6 mb-14">
+
+				<!-- CARD: PHONE -->
+				<div class="flex items-center gap-3 bg-white/10 border border-white/20 
+							backdrop-blur-sm px-8 py-4 rounded-xl min-w-[260px]">
+					
+					<!-- Ícono -->
+					<svg xmlns="http://www.w3.org/2000/svg"
+						fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="#93c5fd" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" 
+							d="M2.25 4.5c0 8.284 6.716 15 15 15h.75a2.25 2.25 0 002.25-2.25v-.416a1.5 1.5 0 00-.97-1.393l-3.192-1.197a1.5 1.5 0 00-1.622.45l-.67.804a11.044 11.044 0 01-5.272-5.272l.804-.67a1.5 1.5 0 00.45-1.622L6.059 3.47A1.5 1.5 0 004.666 2.5H4.25A2.25 2.25 0 002.25 4.5z" />
+					</svg>
+
+					<p class="text-white text-md font-medium tracking-wide">
+						123-456-7890
+					</p>
+				</div>
+
+				<!-- CARD: EMAIL -->
+				<div class="flex items-center gap-3 bg-white/10 border border-white/20 
+							backdrop-blur-sm px-8 py-4 rounded-xl min-w-[260px]">
+
+					<svg xmlns="http://www.w3.org/2000/svg"
+						fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="#93c5fd" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" 
+							d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5
+							a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5
+							a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5
+							4.5a2.25 2.25 0 01-2.36 0l-7.5-4.5A2.25 2.25 0 012.25 6.993V6.75" />
+					</svg>
+
+					<p class="text-white text-md font-medium tracking-wide">
+						info@mysite.com
+					</p>
+				</div>
+
+				<!-- CARD: ADDRESS -->
+				<div class="flex items-center gap-3 bg-white/10 border border-white/20 
+							backdrop-blur-sm px-8 py-4 rounded-xl min-w-[260px]">
+
+					<svg xmlns="http://www.w3.org/2000/svg"
+						fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="#93c5fd" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" 
+							d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+						<path stroke-linecap="round" stroke-linejoin="round" 
+							d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 
+							4.5 10.5a7.5 7.5 0 1115 0z" />
+					</svg>
+
+					<p class="text-white text-md font-medium tracking-wide">
+						500 Terry Francine Street San Francisco, CA 94158
+					</p>
+				</div>
+
+			</div>
+
+			<!-- BOTÓN -->
+			<Button 
+				size="lg"
+				link="/"
+				classes="!bg-white !text-blue-700 hover:!bg-blue-200 !font-semibold px-10 !rounded-xl"
+			>
+				GET A QUOTE
+			</Button>
+
+		</Col>
+	</Row>
+</Section>
+

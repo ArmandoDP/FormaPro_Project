@@ -29,7 +29,7 @@ const testimonials = [
 <section class="w-full bg-[#f0f6ff] py-24">
 
     <div class="text-center mb-16">
-        <h5 class="text-blue-600 font-semibold tracking-wide">TESTIMONIALS</h5>
+        <h5 class="text-[#ea734a] font-semibold tracking-wide">TESTIMONIALS</h5>
         <h2 class="text-4xl font-bold text-neutral-900">What Our Clients Say</h2>
     </div>
 
@@ -45,17 +45,16 @@ const testimonials = [
             slides-per-view="1"
             speed="900"
             class="pb-10"
+            style="--swiper-navigation-color:#ea734a; --swiper-theme-color:#ea734a; --swiper-pagination-color:#ea734a;"
         >
             {testimonials.map((t) => (
                 <swiper-slide>
                     <div class="bg-white rounded-2xl p-16 shadow-lg text-center mx-auto max-w-3xl">
 
                         <p class="text-2xl font-semibold mb-6">{t.quote}</p>
-
                         <p class="text-neutral-600 leading-relaxed mb-8">{t.text}</p>
-
                         <p class="font-semibold">{t.author}</p>
-                        <p class="text-blue-600">{t.location}</p>
+                        <p class="text-[#ea734a]">{t.location}</p>
 
                     </div>
                 </swiper-slide>
@@ -69,17 +68,17 @@ const testimonials = [
 <style>
     swiper-container::part(navigation-button-prev),
     swiper-container::part(navigation-button-next) {
-        color: #1f3a8b;
         width: 48px;
         height: 48px;
         font-size: 32px;
     }
 
     swiper-container::part(navigation-button-prev) {
-        left: -80px; /* flechas más separadas */
+        left: -80px;
     }
 
     swiper-container::part(navigation-button-next) {
         right: -80px;
     }
 </style>
+

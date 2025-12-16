@@ -17,6 +17,7 @@ import AvatarGroup from '../../ui/AvatarGroup.astro'
 // Content
 // - Hero Image
 import heroImage from '../../../assets/hero-01.png'
+import aboutUs from '../../../assets/AboutUs/Sobre_Nosotros.png'
 import ejemploImage from '../../../assets/cards/feature-01.svg'
 // - Avatars
 import user1 from '../../../assets/avatars/avatar-01.webp'
@@ -33,12 +34,12 @@ const avatars = [
 	<Row>
         <Col span="6" align="center">
 			<Image
-				src={heroImage}
+				src={aboutUs}
 				alt="Foxi. The tailwind astro theme"
 				class="shadow-2xl shadow-neutral-200 dark:shadow-neutral-950 rounded-2xl"
 				format="webp"
 			/>
-            <div class="absolute left-1/2 -translate-x-1/2 w-[60%] -bottom-16 bg-[#ea734a] text-white rounded-2xl py-8 px-10 flex items-center justify-center shadow-xl gap-10">
+            <!-- <div class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] -bottom-16 bg-[#ea734a] text-white rounded-2xl py-8 px-10 flex items-center justify-center shadow-xl gap-10">
 
                 <div class="text-center">
                     <p class="text-3xl font-semibold leading-none">5</p>
@@ -51,7 +52,7 @@ const avatars = [
                     <p class="text-3xl font-semibold leading-none">35</p>
                     <p class="text-sm opacity-80">Completed jobs</p>
                 </div>
-            </div>
+            </div> -->
 		</Col>
 		<Col span="1" />
 		<Col span="5" align="left">

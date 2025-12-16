@@ -15,12 +15,11 @@ import Button from '../../ui/Button.astro'
 
 // Content
 // - Cards
-import service01 from '../../../assets/hero-01.png'
-import feature01 from '../../../assets/cards/feature-01.svg'
-import feature02 from '../../../assets/cards/feature-02.svg'
-import feature03 from '../../../assets/cards/feature-03.svg'
-import feature04 from '../../../assets/cards/feature-04.svg'
-import feature05 from '../../../assets/cards/feature-05.svg'
+import service01 from '../../../assets/OurServices/Servicio01.png'
+import service02 from '../../../assets/OurServices/Servicio02.png'
+import service03 from '../../../assets/OurServices/Servicio03.png'
+import service04 from '../../../assets/OurServices/Servicio04.png'
+// - Images
 
 import heroImage from '../../../assets/hero-01.png'
 
@@ -30,7 +29,7 @@ import heroImage from '../../../assets/hero-01.png'
 	<Row>
 		<Col span="7" align="left" classes="mb-12 max-w-4xl">
 			<h5><strong>Services</strong></h5>
-			<h2 class="text-pretty">Nuestros Servicios</h2>
+			<h2 class="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-extrabold leading-tight md:leading-snug text-balance">Nuestros Servicios</h2>
 			<!-- <Image
 				src={heroImage}
 				alt="Foxi. The tailwind astro theme"
@@ -38,8 +37,8 @@ import heroImage from '../../../assets/hero-01.png'
 				format="webp"
 			/> -->
 		</Col>
-		<Col span="2" />
-		<Col span="3" align="right" classes="mt-12">
+		<Col span="3" />
+		<Col span="2" align="left" classes="-mt-12 lg:mt-12">
 			<Button size="base" link="/">See All Services</Button>
 		</Col>
 	</Row>
@@ -56,7 +55,7 @@ import heroImage from '../../../assets/hero-01.png'
 			<Card
 				title="Mantenimiento a Naves y Plantas"
 				subtitle="Servicios especializados para la industria ligera, logística y manufactura. Seguridad y durabilidad en cada intervención."
-				image={service01}
+				image={service02}
 				link="/features"
 			/>
 		</Col>
@@ -64,7 +63,7 @@ import heroImage from '../../../assets/hero-01.png'
 			<Card
 				title="Mantenimiento General (Facility Management)"
 				subtitle="Asegure la continuidad operativa de su negocio con planes de mantenimiento programado o respuesta ante emergencias."
-				image={service01}
+				image={service03}
 				link="/features"
 			/>
 		</Col>
@@ -72,7 +71,7 @@ import heroImage from '../../../assets/hero-01.png'
 			<Card
 				title="Fit-Out Comercial y Restaurantero"
 				subtitle="Ejecución rápida para aperturas y renovaciones de locales en plazas comerciales."
-				image={service01}
+				image={service04}
 				link="/features"
 			/>
 		</Col>

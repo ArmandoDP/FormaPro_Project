@@ -17,6 +17,7 @@ import AvatarGroup from '../../ui/AvatarGroup.astro'
 // Content
 // - Hero Image
 import heroImage from '../../../assets/hero-01.png'
+import BannerPrincipal from '../../../assets/Banner_principal.png'
 // - Avatars
 import user1 from '../../../assets/avatars/avatar-01.webp'
 import user2 from '../../../assets/avatars/avatar-02.webp'
@@ -35,30 +36,33 @@ const avatars = [
 				<strong>30K+</strong> satisfied customers
 				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
 			</ChipNotification> -->
-			<h2>Mantenimiento, Construcción y Adecuación de Espacios para Empresas en Querétaro.</h2>
+			<h2 class="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-extrabold leading-tight md:leading-snug text-balance">
+				Mantenimiento, Construcción y Adecuación de Espacios para Empresas en Querétaro
+			</h2>
 
-			<p class="pb-0 text-lg">Profesionalizamos la infraestructura de su negocio. Desde la remodelación de oficinas corporativas hasta el mantenimiento de naves industriales. Un solo proveedor, ejecución certificada y gestión integral.</p>
+
+			<p class="pb-0 text-sm lg:text-lg 2xl:text-xl text-justify leading-relaxed md:leading-loose">
+				Profesionalizamos la infraestructura de su negocio. Desde la remodelación de
+				oficinas corporativas hasta el mantenimiento de naves industriales. Un solo
+				proveedor, ejecución certificada y gestión integral.
+			</p>
+
 			<Button size="lg" link="/">Solicitar Cotización Técnica</Button>
+			<Col span="2" classes='pt-8 lg:pt-14'>
+				<h5>Información de contacto</h5>
+
+				<p class="pb-0 text-xs lg:text-lg 2xl:text-xl text-justify leading-relaxed md:leading-loose">✓ Facturación y Cumplimiento REPSE.</p>
+				<p class="pb-0 text-xs lg:text-lg 2xl:text-xl text-justify leading-relaxed md:leading-loose">✓ Respuesta Técnica &lt; 24 Horas.</p>
+				<p class="pb-0 text-xs lg:text-lg 2xl:text-xl text-justify leading-relaxed md:leading-loose">✓ Cobertura en Parques Industriales y Zonas Corporativas.</p>
+			</Col>
 		</Col>
-		<Col span="1" />
-		<Col span="5" align="center">
+		<Col span="6" align="center">
 			<Image
-				src={heroImage}
+				src={BannerPrincipal}
 				alt="Foxi. The tailwind astro theme"
-				class="translate-y-8 shadow-2xl shadow-neutral-200 dark:shadow-neutral-950 rounded-2xl"
+				class="shadow-2xl shadow-neutral-200 dark:shadow-neutral-950"
 				format="webp"
 			/>
-		</Col>
-		<Col span="2">
-			<h5>Información de contacto</h5>
-
-			<div class="whitespace-nowrap text-sm flex gap-8 items-center">
-				<span>✓ Facturación y Cumplimiento REPSE.</span>
-				<span>✓ Respuesta Técnica &lt; 24 Horas.</span>
-			</div>
-			<div class="whitespace-nowrap text-sm flex gap-8 items-center mt-4 ">
-				<span>✓ Cobertura en Parques Industriales y Zonas Corporativas.</span>
-			</div>
 		</Col>
 		<Col span="6"/>
 		<Col span="8"/>

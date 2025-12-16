@@ -35,20 +35,25 @@ const savedNavActions = navActions.map((action) => ({
 }))
 ---
 
-<div class="w-full bg-[#052B31] text-white sticky top-0 z-[40] items-center justify-between px-6 text-sm font-medium">
-    <div class="container mx-auto px-6 h-[50px] flex justify-between items-center">
+<div class="w-full bg-[#052B31] text-white sticky top-0 z-[40]">
+    <div class="container mx-auto px-4 sm:px-6 h-[50px] flex items-center justify-between gap-3">
+        
         <!-- Dirección + Teléfono -->
-		<p class="whitespace-nowrap flex items-center gap-2 mt-5">
-			Av. Ramón Rodríguez, Jardines de Querétaro, 76020 Santiago de Querétaro, Qro.
-			<span class="opacity-60">|</span>
-			+52 (55) 3446-9970
-		</p>
+        <p class="flex items-center gap-2 text-[10px] sm:text-sm font-medium leading-tight sm:leading-normal 
+                  max-w-[65%] sm:max-w-none overflow-hidden whitespace-nowrap truncate mt-5">
+            Av. Ramón Rodríguez, Jardines de Querétaro, 76020 Santiago de Querétaro, Qro.
+            <span class="opacity-60 mx-1">|</span>
+            +52 (55) 3446-9970
+        </p>
 
         <!-- BOTÓN WHATSAPP -->
         <a
             href="https://wa.me/5215534469970"
             target="_blank"
-            class="bg-[#d62828] text-white flex items-center gap-2 font-semibold px-5 py-2 rounded-l-xl rounded-r-xl shadow-md hover:bg-[#b71f1f] transition"
+            class="bg-[#d62828] text-white flex items-center gap-1 sm:gap-2 
+                   font-semibold px-3 sm:px-5 py-1.5 sm:py-2 
+                   rounded-xl shadow-md hover:bg-[#b71f1f] transition 
+                   text-[11px] sm:text-base whitespace-nowrap flex-shrink-0"
         >
             <!-- Icono WhatsApp -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 fill-white">
@@ -59,6 +64,7 @@ const savedNavActions = navActions.map((action) => ({
         </a>
     </div>
 </div>
+
 <header class="header">
 	<div class="header__container">
 		<nav aria-label="main navigation" role="navigation" class="header__nav">
